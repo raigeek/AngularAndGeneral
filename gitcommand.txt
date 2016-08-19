@@ -1,0 +1,14 @@
+Command to Push New Project to repository
+ - Create folder in repo first (let us say project created is "General"
+ - Below command under parent (Local project is "Something" if I run command under something, all files will be added to General in repo)
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git remote add origin <project url>
+     git push -f origin master
+
+Command to clear unnecesary file within project
+    git config --global core.autocrlf input
+
+To know the repository location
+    git remote show origin
